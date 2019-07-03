@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graphic Web FAQ</title>
+    <link rel = "stylesheet" type = "text/css" href = "./finalCSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Amiri:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class = "links">
+        <a href = "./homeFinal.html">Home</a>
+        <a href = "./aboutFinal.html">About</a>
+        <a href = "./faqFinal.html">FAQ</a>
+        <a href = "#">Articles</a>
+        <a href = "./contactsFinal.html">Contacts</a>
+    </nav>
+    <header class = "image-main">
+        <h1>Graphic Web: Frequently Asked Questions (FAQ)</h1>
+        <img src = "./faqImageFinal.jpg" alt = "Graphic Web FAQ" title = "Graphic Web FAQ">
+    </header>
+    <section class = "faq">
+        <p class = "question">
+            What are the prices for a product?
+        </p>
+        <p class = "answer">
+            The prices depend on the amount of work required to make the product.
+        </p>
+        <p class = "question">
+            How to know I won't be scammed?
+        </p>
+        <p class = "answer">
+            You can check in contacts the biographies of some workers here as an evidence of their qualification.
+        </p>
+        <p class = "question">
+            Are you really that good at making stuff?
+        </p>
+        <p class = "answer">
+            Yes! You can check out some other works of ours and see for yourself!
+        </p>
+        <p class = "question">
+            Is the information in the articles correct? How do I know if it is correct?
+        </p>
+        <p class = "answer">
+            All articles are written by us, who have high experience in both the web and graphic design fields. They also have sources citated for further guarantee.
+        </p>
+        <p class = "question">
+            Are there refunds?
+        </p>
+        <p class = "answer">
+            Yes, but only during the wireframe phase. After that, you must pay for our services no matter what.
+        </p>
+        <p class = "question">
+            Where is your office?
+        </p>
+        <p class = "answer">
+            Check the Contacts page.
+        </p>
+        <p class = "question">
+            I have a complaint or suggestion, where can I send them?
+        </p>
+        <p class = "answer">
+            The easiest way to send them to us is by sending them to our e-mail (which can be found in the Contacts page). We take them seriously, especially the complaints, so please make sure you're detailed as possible.
+        </p>
+        <p class = "question">
+            Is the Earth flat?
+        </p>
+        <p class = "answer">
+            Yes.
+        </p>
+    </section>
+    <footer class = "copyright">
+        <p>
+            Graphic Web reserves all rights. Articles written by us. 2015-2019 <span class = "fa fa-copyright"></span>
+        </p>
+    </footer>
+</body>
+</html>
