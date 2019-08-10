@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 :root {
     --bgcolor: hsla(54, 62%, 92%, 0.9);
     --contrast: hsla(4, 84%, 54%, 1);
