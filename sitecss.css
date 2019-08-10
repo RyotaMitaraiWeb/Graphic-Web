@@ -58,7 +58,7 @@ section p {
     text-align: center;
     height: 80px;
     border: 1px solid black;
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
