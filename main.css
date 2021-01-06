@@ -695,4 +695,8 @@ margin-right: 0;
 	input[type="submit"] {
 		font-size: 2.5rem;
 	}
+
+	input[type="text"], input[type="email"], textarea, select {
+		min-width: 100%;
+	}
 }
