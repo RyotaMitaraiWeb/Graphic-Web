@@ -690,10 +690,17 @@ margin-right: 0;
 	.purchase h4, .purchase h2, .purchase h3, .purchase h5 {
 		font-size: 3em;
 		line-height: 1.5;
+		text-align: center;
+	}
+
+	fieldset {
+		text-align: center;
 	}
 
 	input[type="submit"] {
 		font-size: 2.5rem;
+		display: block;
+		margin: 0 auto;
 	}
 
 	form.col-1-3 {
