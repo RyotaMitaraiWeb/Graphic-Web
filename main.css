@@ -265,6 +265,7 @@ Rows
 .row-alt{
 min-width: 960px;
 }
+
 .row {
 background: #fff;
 padding: 66px 0 44px 0;
@@ -275,6 +276,7 @@ background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
 background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
 background: linear-gradient(to right, #a1d3b0, #f6f1d3);
 padding: 44px 0 22px 0;
+overflow-x: hidden; /* премахва допълнителното прострнство при устройства с по-малък екран */
 }
 
 
@@ -382,13 +384,177 @@ vertical-align: top;
 margin-right: 0;
 }
 
+/*
+  ========================================
+  Speakers
+  ========================================
+*/
+  
+.speaker-info {
+	border: 1px solid #dfe2e5;
+	border-radius: 5px;
+	margin-top: 88px;
+	padding: 22px;
+	text-align: center;
+  }
+  
+  .speaker {
+	margin-bottom: 44px;
+  }
+  
+  .speaker-info img {
+	border-radius: 50%;
+	height: 130px;
+	margin: -66px 0 22px 0;
+	vertical-align: top;
+  }
+  
+  /*
+	========================================
+	Venue
+	========================================
+  */
+  
+  .venue-theatre {
+	margin-bottom: 66px;
+  }
+  .venue-hotel {
+	margin-bottom: 22px;
+  }
+  
+  .venue-map {
+	height: 264px;
+  }
+  
+  /*
+	========================================
+	Register
+	========================================
+  */
+  
+  .why-attend {
+	list-style: square;
+	margin: 0 0 22px 30px;
+  }
+  
+  form {
+	margin-bottom: 22px;
+  }
+  input,
+  select,
+  textarea {
+	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .register-group label {
+	color: #648880;
+	cursor: pointer;
+	font-weight: 400;
+  }
+  .register-group input,
+  .register-group select,
+  .register-group textarea {
+	border: 1px solid #c6c9cc;
+	border-radius: 5px;
+	color: #888;
+	display: block;
+	margin: 5px 0 27px 0;
+	padding: 5px 8px;
+  }
+  .register-group input,
+  .register-group textarea {
+	width: 100%;
+  }
+  .register-group select {
+	height: 34px;
+	width: 60px;
+  }
+  .register-group textarea {
+	height: 78px;
+  }
+  
+  /*
+	========================================
+	Schedule
+	========================================
+  */
+  
+  table {
+	margin-bottom: 44px;
+	overflow-x: hidden;
+  }
+  table:last-child {
+	margin-bottom: 0;
+  }
+  
+  th,
+  td {
+	padding-bottom: 22px;
+	vertical-align: top;
+  }
+  th {
+	padding-right: 45px;
+	text-align: right;
+	width: 20%;
+  }
+  td {
+	width: 40%;
+  }
+  
+  thead {
+	line-height: 44px;
+  }
+  thead th {
+	color: #648880;
+	font-size: 24px;
+  }
+  
+  tbody th {
+	color: #a9b2b9;
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: 22px;
+	text-transform: uppercase;
+  }
+  
+  tbody td {
+	border-top: 1px solid #dfe2e5;
+	padding-top: 21px;
+  }
+  tbody td:first-of-type {
+	padding-right: 15px;
+  }
+  tbody td:last-of-type {
+	padding-left: 15px;
+  }
+  tbody td:only-of-type {
+	padding-left: 0;
+	padding-right: 0;
+  }
+  
+  table a {
+	color: #888;
+  }
+  table h4 {
+	margin-bottom: 0;
+  }
+  
+  .schedule-offset {
+	color: #a9b2b9;
+  }
 
+  div.panels {
+	  display: flex;
+	  flex-direction: row;
+	  width: 100%;
+  }
 
-@media only screen and (max-width: 768px) {
-	.stack-1 {
+@media only screen and (max-width: 950px) {
+	.stack {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		overflow-x: hidden;
 	}
 
 	span.center {
@@ -418,31 +584,31 @@ margin-right: 0;
 		margin-bottom: 1em;
 	}
 
-	.hero h2 {
+	.hero h2, div.panels h2 {
 		font-size: 3em;
 		line-height: 1.25;
 		margin-bottom: 1.1em;
 	}
 
-	div.grid {
+	div.sections {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	div.grid h5 {
+	div.sections h5 {
 		font-size: 3em;
 		text-align: center;
 	}
 
-	div.grid h3 {
+	div.sections h3 {
 		font-size: 2.5em;
 		line-height: 1.25;
 		text-align: center;
 		margin-bottom: 1.5em;
 	}
 
-	p, .hero p {
+	p, .hero p, .row-alt p {
 		font-size: 2em;
 		line-height: 1.25;
 		margin-bottom: 2em;
@@ -456,5 +622,77 @@ margin-right: 0;
 
 	a.btn-alt {
 		font-size: 1.5em;
+	}
+
+	.speaker-info {
+		margin-bottom: 2em;
+	}
+
+	.speaker-info a {
+		font-size: 1.75em;
+	}
+
+	div.panels {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	div.panels h2 {
+		text-align: center;
+	}
+
+	div.panels h5 {
+		text-align: center;
+		font-size: 2em;
+		line-height: 1.5;
+	}
+
+	table {
+		max-width: 100%;
+	}
+
+	time {
+		font-size: 2em;
+		line-height: 1.5
+	}
+
+	table a, .schedule-offset, table h4 {
+		font-size: 1.5em;
+	}
+
+	table h4 {
+		line-height: 1.5;
+	}
+
+	.venue-theatre p, .venue-hotel p {
+		font-size: 2em;
+	}
+
+	.venue-theatre h2, .venue-hotel h2 {
+		font-size: 4em;
+		line-height: 1.5;
+	}
+
+	iframe {
+		max-width: 500px;
+		max-height: 500px;
+	}
+
+	form, .purchase ul > li {
+		font-size: 2em;
+		line-height: 1.5;
+	}
+
+	form {
+		margin-top: 1.5em;
+	}
+
+	.purchase h4, .purchase h2, .purchase h3, .purchase h5 {
+		font-size: 3em;
+		line-height: 1.5;
+	}
+
+	input[type="submit"] {
+		font-size: 2.5rem;
 	}
 }
